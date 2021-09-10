@@ -1,6 +1,12 @@
 site_name: The Cheat Sheet
-site_url: https://example.com/
+site_url: https://thecheatsheet.readthedocs.io/
 nav:
     - Home: index.md
     - About: about.md
-theme: readthedocs
+    - Docker: 
+        - Build: 'docker/build.md'
+        - Volumes: 'docker/volumes.md'
+theme: 
+    name: readthedocs
+    highlightjs: true
+
