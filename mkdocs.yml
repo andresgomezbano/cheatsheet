@@ -1,0 +1,6 @@
+site_name: The Cheat Sheet
+site_url: https://example.com/
+nav:
+    - Home: index.md
+    - About: about.md
+theme: readthedocs
