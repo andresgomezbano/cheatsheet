@@ -6,7 +6,9 @@ nav:
     - Docker: 
         - Build: 'docker/build.md'
         - Volumes: 'docker/volumes.md'
+    - Kubernetes: 
+        - Minikube: 'kubernetes/minikube.md'
+        - Pods: 'kubernetes/pods.md'
 theme: 
     name: readthedocs
     highlightjs: true
-
