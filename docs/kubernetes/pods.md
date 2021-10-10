@@ -61,6 +61,7 @@ kubectl describe pod/nginx1
 
 Nos da detalle del pod llamado nginx1
 
+
 ## Exec
 
 Similar a docker nos permite entrar y ejecutar comandos dentro de un contenedor. Por ej.:
@@ -125,3 +126,73 @@ y ejecutamos el comando
 docker ps
 ``` 
 para visualizar informacion de contenedores en ejecucion, no es recomendable modificar el estado del cluster desde dentro del nodo ya que podemos dejarlo en un estado incorrecto.
+
+## Crear Pod desde un Yaml
+Podemos especificar las configuraciones para desplegar un pod por medio de un yaml.
+```
+kubectl create -f nginx.yaml
+```
+
+Para ver sus logs:
+```
+Kubectl logs nginx
+```
+
+Para ver las caracteristicas del pod:
+```
+Kubectl describe pods/nginx1
+```
+## Obtener un Pod
+```
+kubectl get pods
+```
+
+Podemos ver informacion mas detallada:
+
+```
+kubectl get pods -o wide
+```
+
+podemos especificar el formato
+
+```
+kubectl get pod/nginx2 -o yaml
+```
+
+## Borrar un Pod
+
+```
+kubectl get pods
+```
+
+```
+kubectl delete pod/nginx1
+```
+
+```
+kubectl delete pod nginx1, nginx2, nginx3
+```
+
+Especificar un perido de gracia:
+```
+kubectl delete pod apache --grade-period=5
+```
+
+Borrar los pods sin esperar a que se detengan:
+```
+kubectl delete pod apache --now
+```
+
+Borrat tods los pods
+```
+kubectl delete pods --all
+```
+
+## Comando Apply
+Es un comando de tipo declarativo, nos permite crear o modificar un objeto mediante un archivo de configuracion (depediendo de su estado).
+
+```
+kubectl apply -f nginx.yaml
+```
+
+
