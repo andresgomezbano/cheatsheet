@@ -10,6 +10,7 @@ nav:
         - Minikube: 'kubernetes/minikube.md'
         - Pods: 'kubernetes/pods.md'
         - Labels: 'kubernetes/labels.md'
+        - Deployments: 'kubernetes/deployments.md'
 theme: 
     name: readthedocs
     highlightjs: true
