@@ -175,4 +175,9 @@ y despues realizar un describe
 kubectl describe pod nombredelpos
 ```
 
+## Port Forwarding
+Podemos conectarnos directamente hacia un pod haciendo port forward.
 
+```
+kubectl port-forward deployment-56b9cb4fb7-rf9bh 8080:80 
+```

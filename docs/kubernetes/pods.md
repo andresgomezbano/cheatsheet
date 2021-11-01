@@ -195,4 +195,9 @@ Es un comando de tipo declarativo, nos permite crear o modificar un objeto media
 kubectl apply -f nginx.yaml
 ```
 
+## Eliminar recursos 
+Podemos eliminar los recursos creados en el yaml por medio del comando
 
+```
+kubectl delete -f file.yaml
+```

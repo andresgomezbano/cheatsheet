@@ -190,3 +190,10 @@ kubectl get rs
 ```
 
 La otra estrategia es recreate, en esta se eliminar todos los pods al mismo tiempo y se los vuelve a crear. Muy util para casos donde la aplicación esta caida y se necesita modificarla rápidamente.
+
+## Ver yaml recurso
+Podemos ver el yaml del recurso que se cree por medio del comando
+
+```
+kubectl get svc service -oyaml
+```
